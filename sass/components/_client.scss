@@ -1,0 +1,67 @@
+.client-list {
+  @include centeredFlex();
+  flex-wrap: wrap;
+
+  @media screen and (min-width: $desktop) {
+    flex-wrap: nowrap;
+  }
+
+  .item {
+    @include centeredFlex();
+    height: 90px;
+
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+
+    color: #afb1b8;
+
+    transition: border $time-animation $time-function,
+      color $time-animation $time-function;
+
+    &:hover,
+    &:focus {
+      border: 1px solid $accent-color;
+      color: $accent-color;
+    }
+  }
+}
+
+.client-li {
+  width: calc((100% - 30px) / 2);
+
+  @media screen and (max-width: $tablet1) {
+    &:not(:nth-child(2n)) {
+      margin-right: 30px;
+    }
+
+    &:not(:nth-last-child(-n + 2)) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - 60px) / 3);
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: $desktop1) {
+    &:not(:nth-child(3n)) {
+      margin-right: 30px;
+    }
+
+    &:not(:nth-last-child(-n + 3)) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 170px;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+
+.img-client {
+  --color1: currentColor;
+}

@@ -1,0 +1,50 @@
+.adress {
+  /* для флекс auto работает для горизонтали, для обычных блоков по вертикали */
+  margin-left: auto;
+  font-style: normal;
+}
+
+.adress-nav {
+  @media screen and (max-width: $tablet1) {
+    font-size: 18px;
+    line-height: 1.16;
+
+    & .item + .item {
+      margin-top: 16px;
+    }
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: $desktop1) {
+    & .item + .item {
+      margin-top: 10px;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+
+    & .item + .item {
+      margin-left: 30px;
+    }
+  }
+}
+
+.adress-link {
+  color: $primary-text-color;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  transition: color $time-animation $time-function;
+
+  &:focus,
+  &:hover {
+    color: $accent-color;
+  }
+}
+
+.icon-header {
+  margin-right: 10px;
+  fill: currentColor;
+  vertical-align: middle;
+}

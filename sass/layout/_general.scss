@@ -1,0 +1,161 @@
+body {
+  background-color: $primary-white-color;
+  color: $primary-text-color;
+
+  font-family: $fontGeneral;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+
+  &.modal-open {
+    overflow: hidden;
+  }
+}
+
+button {
+  font-family: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  @extend %centeredMargin;
+
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+  }
+}
+
+.main-nav {
+  position: relative;
+
+  border-bottom: 1px solid #ececec;
+  padding-top: 16px;
+  @media screen and (max-width: $tablet1) {
+    padding-bottom: 16px;
+  }
+
+  @include centeredFlex(space-between);
+}
+
+.button {
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+  padding: 10px 32px;
+  border-radius: 4px;
+
+  border-width: 0px;
+
+  color: $primary-white-color;
+  background-color: $accent-color;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  text-decoration: none;
+  text-align: center;
+
+  &.subscribe {
+    margin-top: 20px;
+    padding: 10px 28px 10px 29px;
+    @media screen and (min-width: $desktop) {
+      margin-top: 0;
+    }
+  }
+}
+
+.section {
+  padding-bottom: 60px;
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 94px;
+  }
+}
+
+.section-title {
+  margin-bottom: 50px;
+
+  color: $title-text-color;
+  font-weight: 700;
+  text-align: center;
+
+  font-size: 28px;
+  line-height: 1.17;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 36px;
+  }
+}
+
+.img-social {
+  @include centeredFlex();
+
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+
+  background-color: $primary-white-color;
+  color: #afb1b8;
+  fill: currentColor;
+
+  transition: background-color $time-animation $time-function,
+    color $time-animation $time-function;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $primary-white-color;
+  }
+}
+
+.social-list {
+  @include centeredFlex();
+
+  margin-bottom: 24px;
+  margin-top: 16px;
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 30px;
+  }
+
+  .item + .item {
+    margin-left: 10px;
+  }
+}

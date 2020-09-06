@@ -1,0 +1,113 @@
+.overlay {
+  @include centeredFlex();
+  @extend %centeredMargin;
+
+  max-width: $mobile;
+  height: 400px;
+
+  @media screen and (min-width: $tablet) {
+    max-width: $tablet;
+  }
+
+  @media screen and (min-width: $desktop) {
+    max-width: $desktopMax;
+    min-width: $desktop;
+    height: 600px;
+  }
+
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url('../images/Header/HeaderMobile.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(47, 48, 58, 0.4);
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/Header/HeaderMobile@2x.jpg');
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .overlay {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/Header/HeaderTablet.jpg');
+  }
+}
+
+@media screen and (min-width: $tablet) and (min-device-pixel-ratio: 2),
+  screen and (min-width: $tablet) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: $tablet) and (min-resolution: 192dpi),
+  screen and (min-width: $tablet) and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/Header/HeaderTablet@2x.jpg');
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .overlay {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/Header/HeaderDesktop.jpg');
+  }
+}
+
+@media screen and (min-width: $desktop) and (min-device-pixel-ratio: 2),
+  screen and (min-width: $desktop) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: $desktop) and (min-resolution: 192dpi),
+  screen and (min-width: $desktop) and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/Header/HeaderDesktop@2x.jpg');
+  }
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 44px;
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 94px;
+  }
+}
+
+.hero-title {
+  margin-bottom: 30px;
+
+  color: $primary-white-color;
+
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.61;
+
+  @media screen and (min-width: $desktop) {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+  }
+
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
