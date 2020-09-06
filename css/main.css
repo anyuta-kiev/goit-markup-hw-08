@@ -1398,6 +1398,7 @@ p {
 
 .modal .button {
   display: block;
+  cursor: pointer;
 }
 
 .form-title {

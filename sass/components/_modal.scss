@@ -49,6 +49,7 @@
 
   .button {
     display: block;
+    cursor: pointer;
     @extend %centeredMargin;
   }
 }
