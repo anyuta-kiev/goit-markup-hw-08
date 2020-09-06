@@ -88,10 +88,10 @@ textarea {
   display: flex;
   flex-direction: column;
 
-  // &:focus .form-label,
-  // &:hover .form-label {
-  //   color: $accent-color;
-  // }
+  &:focus .form-label,
+  &:hover .form-label {
+    color: $accent-color;
+  }
 }
 
 .form-label {

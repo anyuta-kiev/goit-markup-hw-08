@@ -1439,6 +1439,11 @@ textarea:focus {
           flex-direction: column;
 }
 
+.form-field:focus .form-label,
+.form-field:hover .form-label {
+  color: #2196f3;
+}
+
 .form-label {
   font-size: 12px;
   line-height: 1.16;
