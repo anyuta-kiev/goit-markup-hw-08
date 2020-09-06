@@ -405,6 +405,10 @@ body.modal-open {
   overflow: hidden;
 }
 
+header {
+  position: relative;
+}
+
 button {
   font-family: inherit;
 }
@@ -462,7 +466,6 @@ p {
 }
 
 .main-nav {
-  position: relative;
   border-bottom: 1px solid #ececec;
   padding-top: 16px;
   display: -webkit-box;

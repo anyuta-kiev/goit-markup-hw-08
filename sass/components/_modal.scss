@@ -87,6 +87,11 @@ textarea {
   margin-bottom: 10px;
   display: flex;
   flex-direction: column;
+
+  // &:focus .form-label,
+  // &:hover .form-label {
+  //   color: $accent-color;
+  // }
 }
 
 .form-label {
@@ -103,7 +108,7 @@ textarea {
 
   color: black;
   transition: color $time-animation $time-function;
-  cursor: pointer;  
+  cursor: pointer; 
 
   &:focus + .img-form {
     color: $accent-color;
