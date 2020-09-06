@@ -2,11 +2,11 @@
   @include centeredFlex();
   @extend %centeredMargin;
 
-  max-width: $mobile;
+  width: 100%;
   height: 400px;
 
   @media screen and (min-width: $tablet) {
-    max-width: $tablet;
+    width: 100%;
   }
 
   @media screen and (min-width: $desktop) {

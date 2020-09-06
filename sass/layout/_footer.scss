@@ -4,12 +4,14 @@
   text-align: center;
   padding: 60px 0px;
 
+  height: auto;
+
   height: 603px;
-  max-width: $mobile;
+  width: 100%;
 
   @media screen and (min-width: $tablet) {
     height: 463px;
-    max-width: $tablet;
+    width: 100%;
   }
 
   @media screen and (min-width: $desktop) {

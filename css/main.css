@@ -424,6 +424,10 @@ p {
   margin-bottom: 0;
 }
 
+footer {
+  background-color: #2f303a;
+}
+
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
@@ -810,7 +814,7 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  max-width: 480px;
+  width: 100%;
   height: 400px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/header/HeaderMobile.jpg");
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/header/HeaderMobile.jpg");
@@ -822,7 +826,7 @@ p {
 
 @media screen and (min-width: 768px) {
   .overlay {
-    max-width: 768px;
+    width: 100%;
   }
 }
 
@@ -937,7 +941,7 @@ p {
 
 @media screen and (min-width: 768px) {
   .feature-list .item {
-    width: calc((100% - 60px) / 2);
+    width: calc((100% - 30px) / 2);
   }
 }
 
@@ -1201,15 +1205,16 @@ p {
 .footer-main {
   text-align: center;
   padding: 60px 0px;
+  height: auto;
   height: 603px;
-  max-width: 480px;
+  width: 100%;
   background: #2f303a;
 }
 
 @media screen and (min-width: 768px) {
   .footer-main {
     height: 463px;
-    max-width: 768px;
+    width: 100%;
   }
 }
 
